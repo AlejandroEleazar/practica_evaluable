@@ -216,3 +216,45 @@ Eliminar una rama local
 `git branch -d [nombre de la rama]`
 
 #
+
+## Etiquetas
+
+> Crear etiqueta
+
+Crear una etiqueta que se asocie automáticamente al HEAD
+
+`git tag -a [nombre de la etiqueta] -m [mensaje de la etiqueta]`
+
+Crear una etiqueta que se asocir a un commit especifico
+
+`git tag -a [nombre de la etiqueta] -m [mensaje de la etiqueta] [id commit] `
+
+#
+
+> Mostrar etiqueta
+
+Mostrar una etiqueta
+
+`git show [nombre de la etiqueta]`
+
+#
+
+> Eliminar etiqueta
+
+Elimir una etiqueta
+
+`git tag -d [Nombre de la etiqueta]`
+
+#
+
+> Subir etiqueta
+
+Subir una etiqueta especifica del repositorio local al repositorio remoto
+
+`git push origin [nombre de la etiqueta]`
+
+Subir las etiquetas del repositorio local al repositorio remoto
+
+`git push origin --tags`
+
+#
