@@ -113,3 +113,106 @@ Eliminar los cambios permanentemente no  guardados y restablecer el directorio d
 
 #
 
+> Deshacer cambios del último commit
+
+Deshacer los cambios realizados en el último commit
+
+`git revert HEAD`
+
+#
+
+## Trabajar en remoto
+
+> Repositorio remoto
+
+Vincularse a con un repositorio remoto
+
+`git remote add origin [link repositorio remoto]`
+
+Subir los commits del repositorio local al remoto
+
+`git push`
+
+Ver el repositorio remoto con el que esta vinculado el repositorio local
+
+`git remote -v`
+
+Cambiar el repositorio remoto vinculado
+
+`git remote set-url origin [link repositorio remoto]`
+
+#
+
+> Clonar repositorio remoto
+
+Clonar el repositorio remoto al repositorio local
+
+`git clone [link repositorio remoto] .`
+
+#
+
+## Ramas
+
+> Crear ramas
+
+Crear una nueva rama
+
+`git branch [nombre de la rama]`
+
+#
+
+> Visualizar ramas
+
+Visualizar las ramas del repositorio local
+
+`git branch`
+
+Visualizar las ramas del repositorio local y remoto
+
+`git branch -a`
+
+Visualizar las ramas del repositorio local con el commit del head
+
+`git branch -v`
+
+#
+
+> Cambio de rama
+
+Cambiar de rama
+
+`git checkout [nombre de la rama]`
+
+#
+
+> Renombrar rama
+
+Cambiamor el nombre de una rama
+
+`git branch -m [nuevo nombre]`
+
+#
+
+>Fusionar rama
+
+Fusionar los cambios realizados en las distintas ramas
+
+`git merge [rama origen][rama destino]`
+
+#
+
+>Subir rama al repositorio remoto
+
+Subir rama del repositorio local al repositorio remoto
+
+`git push origin [rama local 1][rama local 2]`
+
+#
+
+>Eliminar rama
+
+Eliminar una rama local
+
+`git branch -d [nombre de la rama]`
+
+#
