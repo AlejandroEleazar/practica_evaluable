@@ -71,3 +71,45 @@ Ver los cambios realizados en un commit en concreto
 
 #
 
+## Deshaciendo cambios
+
+> Deshacer cambios en el Working
+
+Reemplazar todo lo que haya en el área de working por la última versión valida del HEAD
+
+`git checkout`
+
+Reemplazar todo el contenido del working
+
+`git checkout .`
+
+Deshacer los cambios en un fichero especifico
+
+`git checkout [nombre del fichero]`
+
+#
+
+> Deshacer cambios en el staging
+
+Eliminar el HEAD del staging
+
+`git reset` o `git reset HEAD`
+
+Eliminar un fichero concreto del Staging
+
+`git reset [nombre del ficheor]` o `git reset HEAD [nombre del fichero]`
+
+#
+
+> Deshacer cambios en el staging y en el working
+
+Eliminar los cambios permanentemente no  guardados y restablecer el directorio de trabajo
+
+`git reset --hard`
+
+Eliminar los cambios permanentemente no  guardados y restablecer el directorio de trabajo de un fichero determinado
+
+`git reset --hard [id commit]`
+
+#
+
